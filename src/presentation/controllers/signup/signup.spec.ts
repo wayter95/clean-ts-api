@@ -21,6 +21,7 @@ const makeAddAccount = (): AddAccount => {
   }
   return new AddAccountStub()
 }
+
 const makeFakeAccount = (): AccountModel => ({
   id: 'valid_id',
   name: 'valid_name',

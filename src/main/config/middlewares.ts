@@ -1,6 +1,6 @@
 import { Express } from 'express'
 import { bodyParser, cors, contentType } from '../middlewares'
-const moesif = require('moesif-nodejs')
+import moesif from 'moesif-nodejs'
 
 const moesifMiddleware = moesif({
   applicationId: 'eyJhcHAiOiIxOTg6MTE1NCIsInZlciI6IjIuMCIsIm9yZyI6Ijg4OjE2NjgiLCJpYXQiOjE2MTQ1NTY4MDB9.uGW0eB8XrvtDT3JMP4lItmDlBJ8pzOCS5u4-plA2ZPU',

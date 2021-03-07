@@ -1,2 +1,0 @@
-- name: quickmetrics-action
-  uses: screendriver/quickmetrics-action@v1.0.0

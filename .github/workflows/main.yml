@@ -28,13 +28,6 @@ jobs:
       - name: quickmetrics-action
       # You may pin to the exact commit or the version.
       # uses: screendriver/quickmetrics-action@87b011a064898c0cdb12893c430d87d88955fbf2
-      uses: screendriver/quickmetrics-action@v1.0.0
-      with: Teste metrics
-      name: Clean TS Api
-      api-key: 
-      # The value to send
-      value: 1
-      dimension: 2
       
       # Runs a single command using the runners shell
       - name: Run a one-line script

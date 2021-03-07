@@ -1,2 +1,2 @@
-- name: Repository Metrics Monitor
-  uses: floric/repo-monitor-action@v1.8.0
+- name: quickmetrics-action
+  uses: screendriver/quickmetrics-action@v1.0.0

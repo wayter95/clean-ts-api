@@ -1,0 +1,2 @@
+- name: Repository Metrics Monitor
+  uses: floric/repo-monitor-action@v1.8.0

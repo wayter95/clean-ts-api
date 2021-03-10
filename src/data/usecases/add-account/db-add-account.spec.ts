@@ -42,13 +42,11 @@ interface SutTypes {
 const makeSut = (): SutTypes => {
   const encrypterStub = makeHasher()
   const addAccountRepositoryStub = makeAddAccountRepository()
-  if (addAccountRepositoryStub) {
-    const sut = new DbAddAccount(encrypterStub, addAccountRepositoryStub)
-    return {
-      sut,
-      encrypterStub,
-      addAccountRepositoryStub
-    }
+  const sut = new DbAddAccount(encrypterStub, addAccountRepositoryStub)
+  return {
+    sut,
+    encrypterStub,
+    addAccountRepositoryStub
   }
 }
 

@@ -52,5 +52,8 @@
     "moesif-nodejs": "^3.1.5",
     "mongodb": "^3.6.3",
     "validator": "^13.5.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }

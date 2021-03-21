@@ -1,4 +1,4 @@
-import { RequiredFielValidation, ValidationComposite } from '../../../../../validation/validators'
+import { RequiredFieldValidation, ValidationComposite } from '../../../../../validation/validators'
 import { makeAddSurveyValidation } from './add-survey-validation-factory'
 import { Validation } from '../../../../../presentation/protocols/validation'
 
@@ -9,7 +9,7 @@ describe('AddSurveyValidation Factory', () => {
     makeAddSurveyValidation()
     const validations: Validation[] = []
     for (const field of ['question', 'answers']) {
-      validations.push(new RequiredFielValidation(field))
+      validations.push(new RequiredFieldValidation(field))
     }
     expect(ValidationComposite).toHaveBeenCalledWith(validations)
   })

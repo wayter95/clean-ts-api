@@ -1,5 +1,5 @@
-import { Express } from 'express'
 import { bodyParser, cors, contentType } from '../middlewares'
+import { Express } from 'express'
 import moesif from 'moesif-nodejs'
 
 const moesifMiddleware = moesif({

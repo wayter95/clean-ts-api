@@ -4466,6 +4466,11 @@ mockdate@^3.0.4:
   resolved "https://registry.yarnpkg.com/mockdate/-/mockdate-3.0.4.tgz#5877d22ae875ee369b5fe83539b24d951392a134"
   integrity sha512-+28mhttmiwVeTNruWh0m1iVdYKkkpLlmBszjpuHsOBNYppfx+eFnwIRjtoL3zzUfD4sq1Hg7t9r9lImLSuh1lg==
 
+module-alias@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.2.tgz#151cdcecc24e25739ff0aa6e51e1c5716974c0e0"
+  integrity sha512-A/78XjoX2EmNvppVWEhM2oGk3x4lLxnkEA4jTbaK97QKSDjkIoOsKQlfylt/d3kKKi596Qy3NP5XrXJ6fZIC9Q==
+
 moesif-nodejs@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/moesif-nodejs/-/moesif-nodejs-3.1.5.tgz#42d64959987010d7dced0b2a55c696f52c5d97ba"

@@ -4,7 +4,7 @@ import { throwsError } from '@/domain/test'
 import MockDate from 'mockdate'
 import { mockLoadSurveyRepository } from '@/data/test'
 
-const makeFakeSurveys = (): SurveyModel[] => {
+const mockSurveyModel = (): SurveyModel[] => {
   return [{
     id: 'any_id',
     question: 'any_question',
@@ -58,7 +58,7 @@ describe('DbLoadSuveys UseCase', () => {
   test('Should return a list of Surveys on success',async () => {
     const { sut } = makeSut()
     const surveys = await sut.load()
-    expect(surveys).toEqual(makeFakeSurveys())
+    expect(surveys).toEqual(mockSurveyModel())
   })
 
   test('Should throw if LoadSurveysRepository throws', async () => {

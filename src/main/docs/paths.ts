@@ -4,5 +4,5 @@ export default {
   '/login': loginPath,
   '/signup': signUpPath,
   '/surveys': surveyPath,
-  '/surveys/{surveyId}/result': surveyResultPath
+  '/surveys/{surveyId}/results': surveyResultPath
 }

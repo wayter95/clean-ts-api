@@ -4,6 +4,6 @@ import { makeLoginController } from '@/main/factories/controllers/login/login/lo
 import { Router } from 'express'
 
 export default (router: Router): void => {
-  router.post('/signup',adaptRoute(makeSignUpController()))
-  router.post('/login',adaptRoute(makeLoginController()))
+  router.post('/signup', adaptRoute(makeSignUpController()))
+  router.post('/login', adaptRoute(makeLoginController()))
 }

@@ -1,5 +1,5 @@
+import app from '@/main/config/app'
 import { MongoHelper } from '@/infra/db/mongodb/helpers/mongo-helper'
-import app from '../config/app'
 import { Collection } from 'mongodb'
 import { hash } from 'bcrypt'
 import request from 'supertest'
@@ -19,32 +19,43 @@ describe('Login Routes', () => {
     accountCollection = await MongoHelper.getCollection('accounts')
     await accountCollection.deleteMany({})
   })
+
   describe('POST /signup', () => {
     test('Should return 200 on signup', async () => {
       await request(app)
         .post('/api/signup')
         .send({
-          name: 'Wayter',
-          email: 'wayter.paulo.95@gmail.com',
-          password: '123456',
-          passwordConfirmation: '123456'
+          name: 'Rodrigo',
+          email: 'rodrigo.manguinho@gmail.com',
+          password: '123',
+          passwordConfirmation: '123'
         })
         .expect(200)
+      await request(app)
+        .post('/api/signup')
+        .send({
+          name: 'Rodrigo',
+          email: 'rodrigo.manguinho@gmail.com',
+          password: '123',
+          passwordConfirmation: '123'
+        })
+        .expect(403)
     })
   })
+
   describe('POST /login', () => {
     test('Should return 200 on login', async () => {
-      const password = await hash('123456',12)
+      const password = await hash('123', 12)
       await accountCollection.insertOne({
-        name: 'Wayter',
-        email: 'wayter.paulo.95@gmail.com',
+        name: 'Rodrigo',
+        email: 'rodrigo.manguinho@gmail.com',
         password
       })
       await request(app)
         .post('/api/login')
         .send({
-          email: 'wayter.paulo.95@gmail.com',
-          password: '123456'
+          email: 'rodrigo.manguinho@gmail.com',
+          password: '123'
         })
         .expect(200)
     })
@@ -53,8 +64,8 @@ describe('Login Routes', () => {
       await request(app)
         .post('/api/login')
         .send({
-          email: 'wayter.paulo.95@gmail.com',
-          password: '123456'
+          email: 'rodrigo.manguinho@gmail.com',
+          password: '123'
         })
         .expect(401)
     })

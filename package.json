@@ -59,6 +59,7 @@
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
     "moesif-nodejs": "^3.1.5",
+    "mongo-round": "^1.0.0",
     "mongodb": "^3.6.3",
     "nodemon": "^2.0.7",
     "swagger-ui-express": "^4.1.6",
